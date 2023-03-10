@@ -43,7 +43,7 @@
   }
 
   h2 {
-    background-color: rgb(170, 237, 170);
+    background-color: rgb(124, 225, 124);
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
     font-size: xx-large;
     color: rgb(77, 77, 77);
@@ -62,23 +62,25 @@
   p {
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
     font-size: larger;
-    color: rgb(255, 225, 225);
+    color: rgb(21, 114, 43);
     margin-left: 10%;
+    background-color: rgb(175, 206, 175);
   }
 
   a {
     text-decoration: none;
     color: black;
     border: 1px solid black;
-    background-color: rgb(97, 232, 133);
+    background-color: rgb(247, 255, 129);
     padding-left: 0.8em;
     padding-right: 0.8em;
     margin-left: 1em;
+    margin-top: auto;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   }
   a:hover {
-    color: white;
-    background-color: rgb(11, 87, 35);
+    color: rgb(6, 67, 5);
+    background-color: rgb(154, 205, 23);
   }
 
   img {
@@ -89,5 +91,28 @@
     height: 350;
     border-radius: 40%;
     filter: saturate(150%);
+  }
+
+  body {
+    display: grid;
+    grid:
+      " h    h    h  " auto
+      " .    m   ." auto
+      " .    .    f  " auto
+      " a    .    .  " auto
+      / auto auto auto;
+  }
+
+  header {
+    grid-area: h;
+  }
+  main {
+    grid-area: m;
+  }
+  footer {
+    grid-area: f;
+  }
+  a {
+    grid-area: a;
   }
 </style>
